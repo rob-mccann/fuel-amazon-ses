@@ -13,10 +13,11 @@ You can use this exactly the same way as you would use the default email protoco
 Fork and pull request any useful changes you make.
 
 ```php
-Email::factory(array('protocol' => 'ses'))
+Email::forge(array('driver' => 'ses'))
 	->to('to@yoursite.com')
 	->from('from@yoursite.com')
 	->subject('testing123')
-	->message('Your message goes here.')
+	->body('Your message goes here.')
 	->send();
 ```
+
