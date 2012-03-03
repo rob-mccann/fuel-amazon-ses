@@ -59,6 +59,13 @@ class Email_Driver_SES extends \Email_Driver {
 			++$i;
 		}
 		
+		$i = 0;
+		foreach($this->reply_to as $value)
+		{
+			$params['ReplyToAddresses.member.'.($i+1)] = static::format_addresses(array($value));
+			++$i;
+		}	
+
 		$date = date(DATE_RSS);
 		$signature = $this->_sign_signature($date);
 		
