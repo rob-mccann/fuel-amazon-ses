@@ -4,7 +4,7 @@ Adds basic support for Amazon's Simple Email Service to the FuelPHP 1.1 Email Dr
 
 # Install
 
-In the repository's root directory, run "git clone git://github.com/unforeseen/fuel-amazon-ses.git fuel/packages/amazon-ses" (without quotes).
+In the repository's root directory, run "git clone git://github.com/rob-mccann/fuel-amazon-ses.git fuel/packages/amazon-ses" (without quotes).
 
 # Usage
 
